@@ -16,12 +16,51 @@
 } */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@font-face {
+  font-family: "Benzin";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Benzin/Benzin-Regular.eot");
+  src: url("../fonts/Benzin/Benzin-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Benzin/Benzin-Regular.woff") format("woff"),
+    url("../fonts/Benzin/Benzin-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Benzin";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Benzin/Benzin-Medium.eot");
+  src: url("../fonts/Benzin/Benzin-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Benzin/Benzin-Medium.woff") format("woff"),
+    url("../fonts/Benzin/Benzin-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Benzin";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Benzin/Benzin-Bold.eot");
+  src: url("../fonts/Benzin/Benzin-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Benzin/Benzin-Bold.woff") format("woff"),
+    url("../fonts/Benzin/Benzin-Bold.ttf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
-  font-size: 1rem;
-  line-height: auto;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: normal;
   color: #242223;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 .slbOverlay {
@@ -36,7 +75,8 @@
 }
 
 .btn {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: 80px;
   background-color: #fff;
   border: 1px solid #fff;
@@ -45,11 +85,16 @@
   align-items: center;
   flex-wrap: nowrap;
   font-size: 1.563rem;
-  font-family: "Medium", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s all ease;
   border-radius: 2px;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
 }
 .btn:hover {
   background-color: #242223;
@@ -64,6 +109,21 @@
 }
 .btn-green:hover {
   border: 1px solid #fff;
+}
+
+.btn-border-white {
+  background: transparent;
+  color: #fff;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.btn-border-white:hover {
+  background: #fff;
+  color: #242223;
 }
 
 header {
@@ -309,7 +369,6 @@ header ul.phone li a.Vk {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: "Header", sans-serif;
   text-align: right;
   font-size: 2.188rem;
   color: #242223;
@@ -590,7 +649,7 @@ header ul.phone li a.Vk {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: "Header", sans-serif;
+  font-family: "Benzin", sans-serif;
   text-align: left;
   font-size: 2.188rem;
   color: #242223;
@@ -795,7 +854,7 @@ header ul.phone li a.Vk {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: "Header", sans-serif;
+  font-family: "Benzin", sans-serif;
   text-align: right;
   font-size: 2.188rem;
   color: #242223;
@@ -893,7 +952,7 @@ header ul.phone li a.Vk {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: "Header", sans-serif;
+  font-family: "Benzin", sans-serif;
   text-align: right;
   font-size: 2.188rem;
   color: #242223;
@@ -958,7 +1017,7 @@ header ul.phone li a.Vk {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  font-family: "Header", sans-serif;
+  font-family: "Benzin", sans-serif;
   color: #242223;
   font-size: 2.25rem;
   text-align: center;
@@ -1010,7 +1069,7 @@ header ul.phone li a.Vk {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: "Header", sans-serif;
+  font-family: "Benzin", sans-serif;
   text-align: right;
   font-size: 2.188rem;
   color: #242223;
@@ -1282,7 +1341,7 @@ header ul.phone li a.Vk {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: "Header", sans-serif;
+  font-family: "Benzin", sans-serif;
   text-align: left;
   font-size: 2.188rem;
   color: #fff;
@@ -1415,7 +1474,7 @@ header ul.phone li a.Vk {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: "Header", sans-serif;
+  font-family: "Benzin", sans-serif;
   text-align: right;
   font-size: 2.188rem;
   color: #fff;
@@ -1489,7 +1548,7 @@ footer h3 {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: "Header", sans-serif;
+  font-family: "Benzin", sans-serif;
   text-align: right;
   font-size: 2.188rem;
   color: #fff;
@@ -1805,14 +1864,18 @@ footer img.cover {
 h1 {
   margin: 0 0 16px;
   font-size: 35px;
-  line-height: auto;
+  line-height: normal;
+  font-family: "Benzin", sans-serif;
+  font-weight: bold;
 }
 
 h2,
 .h2 {
   font-size: 35px;
-  line-height: auto;
+  line-height: normal;
   margin: 0 0 16px;
+  font-family: "Benzin", sans-serif;
+  font-weight: bold;
 }
 
 .box-text p:last-child {
@@ -1887,4 +1950,283 @@ a {
   background-size: cover;
   opacity: 0.2;
   z-index: -1;
+}
+
+.page h1,
+.page .h1 {
+  margin: 6px 0;
+  padding: 0 0 4px;
+  position: relative;
+  z-index: 1;
+}
+
+.page-black {
+  padding: 16px 0 100px;
+  background: #242223;
+  color: #fff;
+}
+
+.page-black h3,
+.page-black h4 {
+  color: #fff;
+  font-family: "Benzin", sans-serif;
+  font-weight: bold;
+}
+
+.page-black h3 {
+  font-size: 25px;
+}
+
+.page-black h4 {
+  font-size: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.my-ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.page-portfolio-home h1:before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  display: block;
+  border-bottom: 1px solid #cfcfcf;
+  bottom: 4px;
+  left: 0;
+  width: calc(100% - 94px);
+  z-index: -1;
+}
+
+.page-portfolio-home h1:after {
+  content: "";
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  background-image: url(../icons/icon-07-small-home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: inherit;
+}
+
+.sidebar {
+  width: 100%;
+}
+
+.sidebar__header {
+  width: 100%;
+  display: none;
+  align-items: start;
+  justify-content: space-between;
+  margin: 0 0 60px;
+}
+
+.sidebar__close {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.sidebar__close:hover {
+  background: #fff;
+}
+
+.sidebar__close:hover svg {
+  fill: #242223;
+}
+
+.sidebar__close svg {
+  width: 32px;
+  height: 32px;
+}
+
+.sidebar h4 {
+  margin: 0 0 16px;
+  width: 100%;
+}
+
+.sidebar-box {
+  margin: 0 0 20px;
+  width: 100%;
+  border: 1px solid #a9a3a3;
+  padding: 40px;
+}
+
+.sidebar-box:last-child {
+  margin: 0;
+}
+
+.sidebar-box sup {
+  font-size: 14px;
+}
+
+.sidebar-box .input-group {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-wrap: nowrap;
+}
+
+.input-group__box {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0 40px 0 0;
+}
+
+.input-group__box:last-child {
+  margin: 0;
+}
+
+.input-group__box span {
+  width: 35px;
+  min-width: 35px;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.input-group__box input {
+  background: transparent;
+  padding: 0;
+  height: 66px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  min-width: auto;
+  width: 100%;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  outline: none;
+}
+
+.input-group__box input::placeholder {
+  color: #a9a3a3;
+}
+
+.input-group__box input:focus,
+.input-group__box input:hover {
+  box-shadow: none;
+}
+
+.list-checkbox li {
+  width: 100%;
+  margin: 0 0 16px;
+}
+
+.list-checkbox li:last-child {
+  margin: 0;
+}
+
+.btn-clear-filter {
+  max-width: 100%;
+}
+
+.label-checkbox {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.label-checkbox input {
+  display: none;
+}
+
+.label-checkbox input:checked + .label-checkbox__custom {
+  background: #00b15a url("../icons/checked.svg") no-repeat center;
+  background-size: 12px;
+}
+
+.label-checkbox__custom {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin: 0 16px 0 0;
+  border: 1px solid #00b15a;
+}
+
+.label-radio {
+  position: relative;
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.label-radio span {
+  display: block;
+}
+
+.label-radio input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  appearance: none;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.label-radio input:checked {
+  background: #fff;
+}
+
+.label-radio input:checked + .label-radio__text {
+  color: #242223;
+}
+
+.list-radio {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.list-radio li {
+  margin: 0 20px 0 0;
+}
+
+.list-radio li:last-child {
+  margin: 0;
 }
