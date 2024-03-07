@@ -22,6 +22,14 @@
     width: 320px;
     height: 320px;
   }
+
+  .product-card {
+    padding: 20px;
+  }
+
+  .product-card__title {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 1400px) {
   header ul.menu {
@@ -33,6 +41,35 @@
   }
   .tehnology .tehnology-slider .image {
     height: 650px;
+  }
+  .btn-filter {
+    display: flex;
+    margin: 0 0 16px;
+  }
+  .sidebar__header {
+    display: flex;
+  }
+  .sidebar-catalog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #242223;
+    padding: 80px 12px;
+    overflow-y: auto;
+    height: 100%;
+    display: none;
+  }
+  .page {
+    padding: 100px 0;
+  }
+
+  .product-card {
+    height: 540px;
+  }
+
+  .product-card__title {
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 1305px) {
@@ -214,7 +251,7 @@
     font-size: 1rem;
   }
   .btn {
-    width: 300px;
+    max-width: 300px;
     height: 60px;
     font-family: "Regular", sans-serif;
     font-size: 1.25rem;
@@ -870,6 +907,11 @@
     line-height: 25px;
     min-height: 350px;
   }
+
+  .btn-filter,
+  .btn-clear-filter {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 665px) {
   .tehnology
@@ -883,6 +925,31 @@
   }
   header ul.phone li a.number {
     font-size: 0.95rem;
+  }
+  .page h1,
+  .page .h1 {
+    padding: 0 75px 0 0;
+  }
+
+  .page-portfolio-home h1:before {
+    width: calc(100% - 20px);
+  }
+
+  .page-portfolio-home h1:after {
+    background-image: url(../icons/icon-15-small.svg);
+    width: 26px;
+    height: 14px;
+  }
+
+  .pagination .page-link {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .pagination .page-item:nth-child(4) {
+    display: none;
   }
 }
 @media screen and (max-width: 374px) {
@@ -939,4 +1006,18 @@
   header ul.phone li a.number {
     font-size: 0.8rem;
   }
-} 
+
+  .pagination {
+    font-size: 20px;
+  }
+
+  .pagination .page-link {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+
+  .product-card__title {
+    font-size: 20px;
+  }
+}
