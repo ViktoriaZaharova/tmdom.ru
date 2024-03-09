@@ -931,11 +931,11 @@
     padding: 0 75px 0 0;
   }
 
-  .page-portfolio-home h1:before {
+  .title-decor:before {
     width: calc(100% - 20px);
   }
 
-  .page-portfolio-home h1:after {
+  .title-decor:after {
     background-image: url(../icons/icon-15-small.svg);
     width: 26px;
     height: 14px;

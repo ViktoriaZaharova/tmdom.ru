@@ -8,6 +8,9 @@ $('.modules-images.slider-four a').simpleLightbox();
 $('.lvl-gallery a').simpleLightbox();
 $('.home-gallery a').simpleLightbox();
 $('.modules-addon__gallerey a').simpleLightbox();
+$('.project-photo').simpleLightbox();
+$('.facade-item__img').simpleLightbox();
+$('.plane-item__img').simpleLightbox();
 
 
 /*Phone mask*/
@@ -173,4 +176,21 @@ $('.btn-filter').on('click', function (e) {
 
 $('.sidebar__close').on('click', function () {
 	$('.sidebar-catalog').fadeOut();
+});
+
+// sliders
+$('.planes-slider').slick({
+	slidesToShow: 1,
+	variableWidth: true,
+	appendArrows: '.planes-slider__nav',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="assets/img/sprite.svg#arrow-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg></button>',
+});
+
+$('.facades-slider').slick({
+	slidesToShow: 1,
+	variableWidth: true,
+	appendArrows: '.facades-slider__nav',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="assets/img/sprite.svg#arrow-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg></button>',
 });
