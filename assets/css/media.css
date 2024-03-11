@@ -1222,6 +1222,15 @@
     width: 260px;
     height: 204px;
   }
+
+  .modal-icon {
+    margin: 0 0 8px;
+  }
+
+  .modal-dialog {
+    max-width: 360px;
+    margin: 20px auto;
+  }
 }
 @media screen and (max-width: 374px) {
   .callback-one .callback-one-form,
@@ -1301,6 +1310,12 @@
   h2,
   .h2 {
     font-size: 26px;
+  }
+
+  h3,
+  .h3,
+  .modal-title {
+    font-size: 22px;
   }
 
   .contacts-box h3 {
