@@ -1,4 +1,9 @@
 /*Adaptive*/
+@media screen and (max-width: 1800px) {
+  .project-content {
+    padding: 20px 0;
+  }
+}
 @media screen and (max-width: 1599px) {
   .modules-addon__gallerey .col-gallerey {
     width: calc(100% - 350px);
@@ -29,6 +34,11 @@
 
   .product-card__title {
     font-size: 20px;
+  }
+
+  .project-price {
+    width: 100%;
+    margin: 0 0 20px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -78,6 +88,10 @@
     margin-left: 10px;
     width: calc(100% - 90px);
   }
+
+  .table-responsive {
+    overflow-y: auto;
+  }
 }
 @media screen and (max-width: 1280px) {
   .slider .first-slide:after {
@@ -85,6 +99,25 @@
   }
   .tehnology .tehnology-slider .image {
     height: 700px;
+  }
+
+  .examination-list {
+    margin: 20px 0 0;
+  }
+
+  .examination-wrapper h3 {
+    margin: 0 0 40px;
+  }
+
+  .nav-tabs {
+    margin: 0 0 40px;
+  }
+
+  .landscape-image__text {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: relative;
   }
 }
 @media screen and (max-width: 1249px) {
@@ -186,6 +219,17 @@
     line-height: 25px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .project-photo {
+    width: calc(100% + 24px);
+    margin: 0 -12px;
+    height: auto;
+  }
+
+  .project-photo img {
+    height: auto;
+  }
+}
 @media screen and (max-width: 1155px) {
   header ul.menu {
     width: 100%;
@@ -193,6 +237,16 @@
   }
   header ul.menu li a {
     font-size: 0.9rem;
+  }
+
+  .mortgage-box {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 80px;
+  }
+
+  .mortgage-box:last-child {
+    margin: 0 0 60px;
   }
 }
 @media screen and (max-width: 1040px) {
@@ -912,6 +966,80 @@
   .btn-clear-filter {
     max-width: 100%;
   }
+
+  .landscape-image {
+    margin: 20px 0 0;
+  }
+
+  .mortgage-row {
+    padding: 24px;
+  }
+
+  .mortgage-row__content {
+    width: 100%;
+    padding: 24px 0 0;
+    flex-wrap: wrap;
+  }
+
+  .mortgage-row h4 {
+    min-width: auto;
+    max-width: none;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  .h1,
+  h1 {
+    font-size: 32px;
+  }
+  .table-responsive {
+    width: calc(100% + 12px);
+  }
+  .stages-work-table {
+    margin: 40px 0;
+    min-width: 1080px;
+  }
+  .stages-work-table-head span {
+    font-size: 15px;
+  }
+
+  .stages-work-row {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 865px) {
+  .nav-tabs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-tabs .nav-item {
+    margin: 0 0 20px;
+  }
+
+  .nav-tabs .nav-item:last-child {
+    margin: 0;
+  }
+
+  .stages-work-row {
+    padding: 40px 20px 0;
+    flex-wrap: wrap;
+  }
+  .stages-work-row__number {
+    width: 100%;
+    margin: 0 0 40px;
+    padding: 0;
+  }
+
+  .stages-work-row__name {
+    width: 100%;
+  }
+
+  .stages-work-row__text {
+    padding: 0;
+    margin: 0 0 40px;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 665px) {
   .tehnology
@@ -946,10 +1074,115 @@
     height: 60px;
     min-width: 60px;
   }
+
+  .planes-slider__item {
+    width: 350px;
+  }
 }
 @media screen and (max-width: 576px) {
   .pagination .page-item:nth-child(4) {
     display: none;
+  }
+  .advantages-project-item {
+    width: 50%;
+  }
+  .advantages-project-item:nth-child(3n) {
+    border-right: 1px solid #cfcfcf;
+  }
+  .advantages-project-item:nth-child(even) {
+    border-right: none;
+  }
+
+  .advantages-project-item:nth-last-child(-n + 3) {
+    border-bottom: 1px solid #cfcfcf;
+  }
+
+  .advantages-project-item:last-child {
+    border-bottom: none;
+  }
+
+  .planes-slider__item {
+    width: 250px;
+    height: 200px;
+  }
+
+  .criteria-item {
+    width: 100%;
+  }
+
+  .landscape-image__text {
+    padding: 16px 20px;
+    line-height: normal;
+  }
+
+  .examination-list-box:last-child {
+    margin: 0 auto 20px;
+  }
+
+  .stages-work-table {
+    font-size: 12px;
+  }
+  .stages-work-table__number {
+    font-size: 15px;
+    width: 100px;
+    padding: 10px 15px;
+  }
+
+  .box-active {
+    padding: 7.5px 11.5px;
+  }
+
+  .box-active .description-box {
+    font-size: 12px;
+    padding: 7.5px 11.5px;
+    left: calc(100% + 30px);
+    min-width: 176px;
+  }
+
+  .box-active .description-box::before {
+    width: 30px;
+    left: -30px;
+  }
+
+  .box-active .description-box::after {
+    left: -30px;
+  }
+
+  .stages-work-table h5 {
+    font-size: 12px;
+  }
+
+  .stages-work-table-row:nth-child(4) .box-active .description-box {
+    min-width: 233px;
+  }
+
+  .stages-work-table-row:nth-child(4) .box-active {
+    margin: 0 40px 0 auto;
+  }
+
+  .stages-work-table-row:nth-child(7) .additionally-text {
+    margin: 0 -60px 0 auto;
+  }
+
+  .stages-work-table-row:nth-child(6) .additionally-text {
+    min-width: 264px;
+    margin: 0 -60px 0 auto;
+  }
+
+  .stages-work-table-row:nth-child(8) .additionally-text {
+    margin: 0 0 0 60px;
+  }
+
+  .stages-work-table .additionally-text {
+    padding: 7.5px 11.5px;
+  }
+
+  .stages-work-table-head {
+    padding: 27.5px 0 0;
+  }
+
+  .stages-work-table-head span {
+    top: -27.5px;
   }
 }
 @media screen and (max-width: 374px) {
@@ -1019,5 +1252,16 @@
 
   .product-card__title {
     font-size: 20px;
+  }
+
+  .mortgage-box__value {
+    font-size: 40px;
+  }
+
+  .h1,
+  h1,
+  h2,
+  .h2 {
+    font-size: 26px;
   }
 }
