@@ -81,6 +81,12 @@
   .product-card__title {
     font-size: 25px;
   }
+
+  .about-gallery-slider,
+  .planes-slider {
+    min-width: auto;
+    width: calc(100% + 12px);
+  }
 }
 @media screen and (max-width: 1305px) {
   .application .inner .item span {
@@ -228,6 +234,14 @@
 
   .project-photo img {
     height: auto;
+  }
+
+  .about-photo {
+    padding: 0 0 20px;
+  }
+
+  .about-content {
+    padding: 0;
   }
 }
 @media screen and (max-width: 1155px) {
@@ -1006,6 +1020,11 @@
   .stages-work-row {
     padding: 40px 20px;
   }
+
+  .about-gallery__item {
+    width: 400px;
+    height: 320px;
+  }
 }
 @media screen and (max-width: 865px) {
   .nav-tabs {
@@ -1187,6 +1206,21 @@
 
   .map-wrapper {
     height: 400px;
+  }
+
+  .about-box {
+    padding: 20px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-box__icon {
+    margin: 0 0 20px;
+  }
+
+  .about-gallery__item {
+    width: 260px;
+    height: 204px;
   }
 }
 @media screen and (max-width: 374px) {

@@ -194,3 +194,11 @@ $('.facades-slider').slick({
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="assets/img/sprite.svg#arrow-left"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg></button>',
 });
+
+$('.about-gallery-slider').slick({
+	slidesToShow: 1,
+	variableWidth: true,
+	appendArrows: '.about-gallery-slider__nav',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="assets/img/sprite.svg#arrow-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg></button>',
+});
