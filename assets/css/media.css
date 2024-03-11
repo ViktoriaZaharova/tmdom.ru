@@ -1184,6 +1184,10 @@
   .stages-work-table-head span {
     top: -27.5px;
   }
+
+  .map-wrapper {
+    height: 400px;
+  }
 }
 @media screen and (max-width: 374px) {
   .callback-one .callback-one-form,
@@ -1263,5 +1267,9 @@
   h2,
   .h2 {
     font-size: 26px;
+  }
+
+  .contacts-box h3 {
+    font-size: 22px;
   }
 }
