@@ -202,3 +202,12 @@ $('.about-gallery-slider').slick({
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="assets/img/sprite.svg#arrow-left"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg></button>',
 });
+
+$('.btn-toggle-portfolio').on('click', function (e) {
+	e.preventDefault();
+	$(this).parents('.page-portfolio').find('.portfolio-col:hidden').slice(0, 4).fadeIn();
+	var onBlock = $(this).parents('.page-portfolio').find('.portfolio-col:hidden').length;
+	if (onBlock <= 0) {
+		$(this).hide();
+	}
+});
